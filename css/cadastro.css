@@ -8,7 +8,7 @@ body {
     background-color: #5F7C8A;
 }
 
-.login {
+.cadastro {
     background-color: #FFF;
     max-width: 500px;
     width: 70%;
@@ -19,15 +19,30 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.login h1 {
+.cadastro h1 {
     font-size: 24px;
     text-align: center;
     color: #5F7C8A;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.login input[type=email],
-.login input[type=password] {
+#success {
+    text-align: center;
+    color: #54839b;
+    padding: 10px;
+    display: none;
+}
+
+#error {
+    text-align: center;
+    color: #FF0000;
+    padding: 10px;
+    display: none;
+}
+
+.cadastro input[type=text],
+.cadastro input[type=email],
+.cadastro input[type=password] {
     width: 100%;
     height: 45px;
     border: 1px solid #CCC;
@@ -36,14 +51,15 @@ body {
     border-radius: 10px;
 }
 
-.login input[type=email]:focus,
-.login input[type=password]:focus {
+.cadastro input[type=text]:focus,
+.cadastro input[type=email]:focus,
+.cadastro input[type=password]:focus {
     outline: 0;
 }
 
-.login input[type=submit] {
+.cadastro input[type=submit] {
     width: 100%;
-    height: 40px;
+    height: 45px;
     cursor: pointer;
     background-color: #5F7C8A;
     color: #FFF;
@@ -52,6 +68,6 @@ body {
     transition: .3s;
 }
 
-.login input[type=submit]:hover {
+.cadastro input[type=submit]:hover {
     background-color: #4A5F6A;
 }
