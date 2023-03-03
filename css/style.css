@@ -13,6 +13,7 @@ body {
     max-width: 500px;
     width: 70%;
     padding: 20px;
+    height: 68%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -24,6 +25,13 @@ body {
     text-align: center;
     color: #5F7C8A;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#error {
+    text-align: center;
+    color: #FF0000;
+    padding: 10px;
+    display: none;
 }
 
 .login input[type=email],
@@ -54,4 +62,71 @@ body {
 
 .login input[type=submit]:hover {
     background-color: #4A5F6A;
+}
+
+.menu-item {
+    margin-top: 20px;
+    border-top: 2px solid #5F7C8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.menu-item a i {
+    font-size: 32px;
+    padding-top: 25px;
+
+
+}
+
+.instagram {
+    color: #C13584;
+    transition: .3s;
+    padding-right: 40px;
+    padding-bottom: 2px;
+}
+
+.instagram:hover {
+    font-size: 31px;
+    background: transparent;
+    color: #d32186;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.linkedin {
+    padding-left: 20px;
+    padding-bottom: 2px;
+    color: #0e2d6c;
+    transition: .3s;
+}
+
+.linkedin:hover {
+    font-size: 31px;
+    background: transparent;
+    color: #143b8a;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.cad {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cad a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #536c79;
+    transition: .3s;
+}
+
+.cad a:hover {
+    color: #394952;
+    font-size: 19px;
 }

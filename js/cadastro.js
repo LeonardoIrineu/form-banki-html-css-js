@@ -66,9 +66,13 @@ function cadastrar() {
         localStorage.setItem('listaUsuario', JSON.stringify(listaUsuario))
 
         success.setAttribute("style", 'display:block')
-        success.innerHTML = 'Cadastrando'
+        success.innerHTML = 'Cadastrando...'
         error.setAttribute('style', 'display:none')
         error.innerHTML = ''
+
+        setTimeout(() => {
+            window.location.href = '/index.html'
+        }, 3000)
 
     } else {
         error.setAttribute('style', 'display:block')

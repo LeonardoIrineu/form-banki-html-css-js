@@ -11,11 +11,21 @@
 
 <body>
     <div class="login">
-        <h1>Entrar em contato</h1>
+        <h1>Login</h1>
+        <div id="error"></div>
         <input type="email" name="email" id="email" placeholder="Seu e-mail">
         <input type="password" name="password" id="password" placeholder="Senha">
-        <input type="submit" name="acao" value="Enviar">
+        <input type="submit" name="acao" value="Enviar" onclick="entrar()">
+        <div class="menu-item">
+            <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+        </div>
+        <div class="cad">
+            <a href="/html/cadastro.html">Cadastre-se</a>
+        </div>
     </div>
+    <script src="/js/login.js"></script>
+    <script src="https://kit.fontawesome.com/8837169d94.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
